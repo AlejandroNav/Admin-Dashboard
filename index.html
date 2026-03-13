@@ -12,34 +12,61 @@
     <div class="dashboard">
         <aside class="sidebar">
             <div class="branding">
-    <img src="assets/images/rumbe.png" alt="Dashboard logo" class="brand-logo">
-    <span>Dashboard</span>
-</div>
+                <img src="assets/images/rumbe.png" alt="Dashboard logo a shrimp and word: La Rumbera"
+                    class="brand-logo">
+                <span>Dashboard</span>
+            </div>
 
             <nav class="sidebar-nav">
                 <ul>
-                    <li>Home</li>
-                    <li>Profile</li>
-                    <li>Messages</li>
-                    <li>History</li>
-                    <li>Tasks</li>
-                    <li>Communities</li>
+                    <li><span class="nav-icon">🏠</span><span>Home</span></li>
+                    <li><span class="nav-icon">🧙‍♂️</span><span>Profile</span></li>
+                    <li><span class="nav-icon">✉️</span><span>Messages</span></li>
+                    <li><span class="nav-icon">🕘</span><span>History</span></li>
+                    <li><span class="nav-icon">✅</span><span>Tasks</span></li>
+                    <li><span class="nav-icon">👥</span><span>Communities</span></li>
                 </ul>
             </nav>
+
             <nav class="sidebar-nav secondary-nav">
                 <ul>
-                    <li>Settings</li>
-                    <li>Support</li>
-                    <li>Privacy</li>
+                    <li><span class="nav-icon">⚙️</span><span>Settings</span></li>
+                    <li><span class="nav-icon">❓</span><span>Support</span></li>
+                    <li><span class="nav-icon">🔒</span><span>Privacy</span></li>
+                    <li id="github-link">
+                        <a href="https://github.com/AlejandroNav/Admin-Dashboard" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="assets/icons/github.svg" alt="" class="nav-icon github-icon">
+                            <span>GitHub Repository</span>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </aside>
 
         <header class="header">
-            <div class="search">Search bar</div>
-            <div class="user-top">User info</div>
-            <div class="user-greeting">Hi there, Alejandro</div>
-            <div class="header-buttons">Buttons</div>
+            <form class="search" action="#" method="get">
+                <img src="assets/icons/file-search.svg" alt="Search icon" class="search-icon">
+                <input type="search" id="site-search" name="q" placeholder="Search..." aria-label="Search dashboard">
+            </form>
+            <div class="user-top">
+                <img src="assets/icons/bell-ring.svg" alt="Notification " class="Notification-icon">
+                <img src="assets/images/beholder.png" alt="User icon a beholder miniature " class="user-avatar">
+                <span id="user-name">Alejandro Nava</span>
+            </div>
+            <div class="user-greeting">
+                <img class="user-avatar-large" src="assets/images/beholder.png" alt="User icon a beholder miniature">
+                <div class="greeting-text">
+                    <p class="greeting-small">Hi there,</p>
+                    <h2 class="greeting-name">Alejandro Nava (@AlejandroNav)</h2>
+                </div>
+            </div>
+
+            <div class="header-buttons">
+                <button class="header-btn">New </button>
+                <button class="header-btn">Upload</button>
+                <button class="header-btn">Share</button>
+            </div>
         </header>
 
 
