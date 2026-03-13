@@ -20,7 +20,51 @@ body {
     background-color: #475F94;
     color: white;
     padding: 20px;
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+    gap: 25px;
+    align-content: start;
 }
+
+.branding {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FDDC5C;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.brand-logo {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.sidebar-nav {
+    background-color: #5a79ba;
+    border-radius: 5px;
+}
+.sidebar-nav ul {
+    list-style: none;
+    display: grid;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+.sidebar-nav ul li{
+    display: block;
+    padding: 10px 10px;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+.secondary-nav {
+    background-color: #5a79ba;
+}
+
 
 .header {
     background-color: #FDDC5C;
