@@ -2,6 +2,14 @@
 
 A clean and modern admin dashboard interface built with **HTML** and **CSS Grid** as part of **The Odin Project**.
 
+## Live Preview
+
+[View the project here](https://alejandronav.github.io/Admin-Dashboard/)
+
+## Screenshot
+
+![Admin Dashboard Preview](https://raw.githubusercontent.com/AlejandroNav/Admin-Dashboard/refs/heads/main/assets/images/dash.png)
+
 ## Overview
 
 This project is a static admin dashboard layout focused on practicing:
@@ -10,7 +18,6 @@ This project is a static admin dashboard layout focused on practicing:
 - Nested grids
 - Semantic HTML
 - Dashboard-style UI structure
-- Reusable layout patterns
 
 The goal was to recreate a dashboard-style interface with a sidebar, header, project cards, announcements, and trending section.
 
