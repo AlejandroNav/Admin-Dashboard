@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@400;700&family=Pacifico&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +21,7 @@
                 <span>Dashboard</span>
             </div>
 
-            <nav class="sidebar-nav">
+            <nav class="sidebar-nav" aria-label="Primary">
                 <ul>
                     <li><span class="nav-icon">🏠</span><span>Home</span></li>
                     <li><span class="nav-icon">🧙‍♂️</span><span>Profile</span></li>
@@ -28,7 +32,7 @@
                 </ul>
             </nav>
 
-            <nav class="sidebar-nav secondary-nav">
+            <nav class="sidebar-nav secondary-nav" aria-label="Secondary">
                 <ul>
                     <li><span class="nav-icon">⚙️</span><span>Settings</span></li>
                     <li><span class="nav-icon">❓</span><span>Support</span></li>
@@ -49,11 +53,13 @@
                 <img src="assets/icons/file-search.svg" alt="Search icon" class="search-icon">
                 <input type="search" id="site-search" name="q" placeholder="Search..." aria-label="Search dashboard">
             </form>
+
             <div class="user-top">
-                <img src="assets/icons/bell-ring.svg" alt="Notification " class="Notification-icon">
-                <img src="assets/images/beholder.png" alt="User icon a beholder miniature " class="user-avatar">
+                <img src="assets/icons/bell-ring.svg" alt="Notification icon" class="notification-icon">
+                <img src="assets/images/beholder.png" alt="User icon a beholder miniature" class="user-avatar">
                 <span id="user-name">Alejandro Nava</span>
             </div>
+
             <div class="user-greeting">
                 <img class="user-avatar-large" src="assets/images/beholder.png" alt="User icon a beholder miniature">
                 <div class="greeting-text">
@@ -63,32 +69,138 @@
             </div>
 
             <div class="header-buttons">
-                <button class="header-btn">New </button>
-                <button class="header-btn">Upload</button>
-                <button class="header-btn">Share</button>
+                <button class="header-btn" type="button">New</button>
+                <button class="header-btn" type="button">Upload</button>
+                <button class="header-btn" type="button">Share</button>
             </div>
         </header>
-
 
         <main class="main-content">
             <section class="projects">
                 <h2>Your Projects</h2>
                 <div class="project-grid">
-                    <div class="card">Project 1</div>
-                    <div class="card">Project 2</div>
-                    <div class="card">Project 3</div>
-                    <div class="card">Project 4</div>
-                    <div class="card">Project 5</div>
-                    <div class="card">Project 6</div>
+                    <article class="card">
+                        <h3>Super Cool Project</h3>
+                        <p>A small dashboard app made to practice layout, spacing, and clean card-based design with CSS
+                            Grid.</p>
+                        <div class="card-actions">
+                            <span>☆+</span>
+                            <span>👁+</span>
+                            <span>🔗</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h3>Less Cool Project</h3>
+                        <p>A basic project for testing buttons, forms, and simple interactive sections in a modern web
+                            page.</p>
+                        <div class="card-actions">
+                            <span>☆+</span>
+                            <span>👁+</span>
+                            <span>🔗</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h3>Impossible App</h3>
+                        <p>An experimental idea that tracks tasks, notes, and random goals inside one slightly chaotic
+                            interface.</p>
+                        <div class="card-actions">
+                            <span>☆+</span>
+                            <span>👁+</span>
+                            <span>🔗</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h3>Easy Peasy App</h3>
+                        <p>A simple website concept focused on readable structure, reusable components, and
+                            beginner-friendly styling.</p>
+                        <div class="card-actions">
+                            <span>☆+</span>
+                            <span>👁+</span>
+                            <span>🔗</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h3>Ad Blocker</h3>
+                        <p>A mock project placeholder for practicing card layouts, icons, and dashboard sections without
+                            real functionality.</p>
+                        <div class="card-actions">
+                            <span>☆+</span>
+                            <span>👁+</span>
+                            <span>🔗</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <h3>Money Maker</h3>
+                        <p>A fake productivity app concept designed to explore headers, sidebars, and responsive content
+                            blocks.</p>
+                        <div class="card-actions">
+                            <span>☆+</span>
+                            <span>👁+</span>
+                            <span>🔗</span>
+                        </div>
+                    </article>
                 </div>
             </section>
+
             <section class="announcements">
                 <h2>Announcements</h2>
-                <div class="panel">Announcement content</div>
+                <div class="announcement-list">
+                    <article>
+                        <h3>Site Maintenance</h3>
+                        <p>We will be performing scheduled maintenance next month to improve performance...</p>
+                    </article>
+
+                    <article>
+                        <h3>Community Share Day</h3>
+                        <p>Join us this Friday to share your latest projects, ideas, and updates with...</p>
+                    </article>
+
+                    <article>
+                        <h3>Privacy Policy Update</h3>
+                        <p>Our privacy policy has been updated to better explain how user data is stored...</p>
+                    </article>
+                </div>
             </section>
+
             <section class="trending">
                 <h2>Trending</h2>
-                <div class="panel">Trending content</div>
+                <div class="panel">
+                    <ul>
+                        <li>
+                            <img src="assets/images/beholder.png" alt="Profile picture for @tegan">
+                            <div class="trending-text">
+                                <p class="trending-user">@tegan</p>
+                                <p class="trending-project">World Peace Builder</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/images/beholder.png" alt="Profile picture for @morgan">
+                            <div class="trending-text">
+                                <p class="trending-user">@morgan</p>
+                                <p class="trending-project">Super Cool Project</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/images/beholder.png" alt="Profile picture for @kendall">
+                            <div class="trending-text">
+                                <p class="trending-user">@kendall</p>
+                                <p class="trending-project">Life Changing App</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/images/beholder.png" alt="Profile picture for @alex">
+                            <div class="trending-text">
+                                <p class="trending-user">@alex</p>
+                                <p class="trending-project">No Traffic Maker</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </main>
     </div>
